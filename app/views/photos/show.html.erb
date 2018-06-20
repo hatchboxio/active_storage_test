@@ -1,6 +1,11 @@
 <p id="notice"><%= notice %></p>
 
-<%= image_tag @photo.image %>
-
+<div>
 <%= link_to 'Edit', edit_photo_path(@photo) %> |
+<%= link_to 'Destroy', photo_path(@photo), method: :delete %> |
 <%= link_to 'Back', photos_path %>
+</div>
+
+<div>
+  <%= image_tag @photo.image %>
+</div>
